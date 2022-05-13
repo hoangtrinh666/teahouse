@@ -1,0 +1,201 @@
+:root{
+
+    --back-ground:#4d8a54;
+    --word-color: #fff;
+    --word-color-hover: #282828;
+    --fsize-p-content: 11px;
+    --fsize-icon: 16px;
+    --fsize-menu: 14px;
+    --font-family-sans-serif:  "Quicksand", sans-serif;
+}
+@media (max-width: 992px){
+    .container {
+        max-width: 960px;
+    }
+    .top-header, .header-pc{
+        display: none;
+    }
+    .header-mobile{
+        display: block;
+    }
+    .reason{
+        padding-top: 50px;
+        padding-bottom: 0;
+    }
+    .title{
+        font-size: 18px !important;
+    }
+    .content-header p, .content-service{
+        font-size: 14px;
+    }
+    .title-service, .slide-title h3, .decription-news{
+        font-size: 14px;
+    }
+    .item-pro-menu{
+        width: 50%;
+        flex-shrink: 0;
+    }
+    .nav-tabs{
+        justify-content: unset;
+    }
+    .nav{
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        padding: 10px;
+    }
+    .menu-today .nav-tabs .nav-link{
+        flex-shrink: 0;
+        width: 100px;
+        margin: 0 10px;
+        padding: 5px;
+        font-size:14px;
+    }
+    .title-drink h3, .title-drink span, .decription-time span,.time-calendar, .order button, .title-news h3,.content-about span, .no-item span{
+        font-size:14px;
+    }
+    .pic-of-time{
+        display: none;
+    }
+    .time-open{
+        width: 100%;
+        padding: 50px 10px 20px 10px;
+    }
+    .title-time, .time-calendar,.decription-time{
+        margin-bottom: 15px;
+    }
+    .order button{
+        padding: 10px 15px;
+    }
+    .time-to-open{
+        background-color: var(--back-ground);
+    }
+    .view-more{
+        display: block;
+    }
+    .owl-news .owl-dots{
+        justify-content: center;
+        display: flex;
+    }
+    .owl-news .row{
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+    }
+    .time-open::before{
+        background-size: contain;
+        width: 115px;
+        height: 104px;
+        right: 5px;
+    }
+    .contact-title h4, .register-title h4,.news-list-title h2{
+        font-size: 18px;
+    }
+    .footer{
+        font-size: 14px;
+    }
+    .contact, .register, .intro{
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    .contact-title, .register-title, .logo-footer{
+        margin-bottom: 20px;
+    }
+    .address, .hotline{
+        margin-bottom: 10px;
+    }
+    .form-email input{
+        height: 50px;
+    }
+    .form-email a{
+        height: 50px;
+    }
+    .form-email input::placeholder{
+        font-size: 12px;
+    }
+    .wrapper-sm-img,.wrapper-sm-title{
+        width: 100%;
+        padding: 0;
+    }
+    .wrapper-sm-img, .wrapper-img{
+        margin-bottom: 10px;
+    }
+    .wrapper-sm-title h3,.wrapper-title h3{
+        font-size: 16px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .wrapper-sm-title span{
+        display: none;
+    }
+    .img-item-tea{
+        width: 50%;
+    }
+    .title-slide .description-menu,.price-item,.total span,.tt-cart span,.is-form i,.input-qty{
+        padding: 0;
+        font-size: 14px !important;
+    }
+    .owl-menu .owl-nav button.owl-prev, .owl-menu .owl-nav button.owl-next{
+        padding: 8px !important ;
+    }
+    .sent-comment{
+        margin: 0 auto;
+        width: 50%;
+    }
+    .form-info {
+        margin-top: 50px;
+        padding-left: 0;
+    }
+    .form-info .sent-info {
+        width: 50%;
+    }
+    .total-cart{
+        width: 100%;
+    }
+    .continue-cart a, .check-buy a{
+        font-size: 16px !important;
+    }
+    .cart-h .cart-remove{
+        display: none;
+    }
+    .cart-h .img-pro{
+        width: 30%;
+        padding-bottom: 40%;
+    }
+    .cart-h .tt-cart{
+        width: 40%;
+    }
+    .cart-h .cart-add{
+        width: 30%;
+    }
+    .cart-h .cart-add span{
+        display: flex;
+    }
+    .continue{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    .continue .continue-cart, .continue .check-buy{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .continue .continue-cart a, .continue .check-buy a{
+        width: 100%;
+        display: block;
+        text-align: center;
+        border-radius: 15px;
+    }
+    .content-checkout{
+        flex-direction: column;
+    }
+    .content-checkout .left-content,.content-checkout .right-content{
+        width:100%
+    }
+    .checkout-title h2 {
+        text-align: center;
+    }
+    .login-content{
+        width: 100%;
+        box-shadow: unset;
+    }
+}

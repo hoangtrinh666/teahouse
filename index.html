@@ -1,0 +1,1297 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea House :) </title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/reponsive.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="top-header">
+         <div class="container">
+             <div class="row">
+                 <div class="col-lg-6 col-md-6">
+                     <div class="contact-hotline d-flex align-items-center">
+                         <span><i>
+                             <img src="images/i_phone.png" alt="contact phone">
+                             </i>
+                              Hotline: <a class="phone" href="tel:18006750">1800 6750</a>
+                         </span>
+                     </div>
+                 </div>
+                 <div class="col-lg-6 col-md-6">
+                     <div class="cart-search d-flex align-items-center justify-content-end">
+                         <div class="search d-flex align-items-center">
+                             <span>
+                                 <i>
+                                     <img src="images/i_search.png" alt="">
+                                 </i> Tìm kiếm
+                             </span>
+                             <form action="/search" class="input-search">
+                                 <input type="text" class="ip-search" placeholder="Tìm kiếm...">
+                                 <button type="submit" class="btn-search">
+                                     <i class="fas fa-search"></i>
+                                 </button>
+                             </form>
+                         </div>
+                         <div class="account">
+                             <span>
+                                 <i>
+                                     <img src="images/i_user.png" alt="">
+                                 </i> Tài khoản
+                             </span>
+                             <div class="group-ac">
+                                 <a href="login.html">Đăng nhập</a>
+                                 <a href="register.html">Đăng ký</a>
+                             </div>
+                         </div>
+                         <div class="cart">
+                             <span>
+                                 <i class="count-c">
+                                     <img src="images/i_cart.png" alt="">
+                                     <span class="count-cart">1</span>
+                                 </i> <a href="cart.html">Giỏ hàng</a>
+                             </span>
+                             <div class="group-cart">
+                                 <!-- <p>Không có sản phẩm nào.</p> -->
+                                 <div class="cart-item-g">
+                                     <div class="img-cart-item">
+                                         <img src="images/pro_1.jpg" alt="">
+                                     </div>
+                                     <div class="tt-cart">
+                                         <span>Trà phúc bồn tử</span>
+                                         <span class="price-cart">40.000₫</span>
+                                         <form class="buttons_added">
+                                            <button type="button" class="minus is-form">
+                                                <i class="fas fa-minus"></i>
+                                            </button>
+                                            <input type="number" pattern="/^-?\d+\.?\d*$/" min="1" max="999" class="input-qty" value="1" />
+                                            <button type="button" class="plus is-form">
+                                                <i class="fas fa-plus"></i>
+                                            </button>
+                                        </form>
+                                     </div>
+                                     <div class="close-cart">
+                                        <i class="fas fa-times"></i>
+                                     </div>
+                                 </div>
+                                 <div class="sum d-flex justify-content-between">
+                                     <span>Tổng cộng: </span>
+                                     <span class="price-cart">40.000₫</span>
+                                 </div>
+                                 <div class="cost">
+                                     <a href="cart.html"><i class="fas fa-cart-plus"></i>Tới giỏ hàng và thanh toán</a>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+        </div>
+        <div class="header-pc">
+            <div class="container">
+                 <div class="menu d-flex justify-content-between">
+                         <ul class="nav-menu">
+                             <li class="nav-item"><a href="index.html"><span>Trang Chủ</span></a></li>
+                             <li class="nav-item"><a href="introduce.html"><span>Giới Thiệu</span></a></li>
+                             <li class="nav-item dropdown"><a href="product.html"><span>Sản Phẩm</span><i class="fas fa-sort-down"></i></a>
+                                 <ul class="sub-menu">
+                                     <li class="sub-item"><a href="product.html"><span>Cà Phê</span></a></li>
+                                     <li class="sub-item"><a href="product.html"><span>Bánh Ngọt</span></a></li>
+                                     <li class="sub-item"><a href="product.html"><span>Smoothies</span></a></li>
+                                     <li class="sub-item"><a href="product.html"><span>Trà Hoa Quả</span></a></li>
+                                 </ul>
+                             </li>
+                         </ul>
+                         <ul class="logo">
+                             <li><a href="index.html">
+                                 <img src="images/logo.png" alt="logo">
+                             </a></li>
+                         </ul>
+                         <ul class="nav-menu">
+                             <li class="nav-item"><a href="news.html"><span>Tin Tức</span></a></li>
+                             <li class="nav-item"><a href="menu.html"><span>Thực Đơn</span></a></li>
+                             <li class="nav-item"><a href="contact.html"><span>Liên Hệ</span></a></li>
+                         </ul>
+                 </div>
+            </div>
+        </div>
+        <div class="header-mobile">
+         <nav class="navbar navbar-expand-lg navbar-light">
+             <div class="container-fluid">
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <span>
+                         <i class="fas fa-bars"></i>
+                     </span>
+                 </button>
+               <a class="navbar-brand" href="index.html">
+                 <img src="images/logo_mobi.png" alt="logo mobile">
+               </a>
+               <button class="cart-mb">
+                     <span>
+                         <a href="cart.html">
+                             <i class="count-c">
+                                 <img src="images/i_cart.png" alt="">
+                                 <span class="count-cart">1</span>
+                             </i>
+                         </a>
+                     </span>
+               </button>
+               <form class="d-flex search-mb">
+                 <input class="form-control me-2 input-search-mb" type="search" placeholder="Tìm kiếm sản phẩm bạn mong muốn" aria-label="Search">
+                 <button class="btn btn-outline-success btn-search-mb" type="submit"><i class="fas fa-search"></i></button>
+               </form>
+               <div class="overlay-mb"></div>
+               <div class="collapse navbar-collapse menu-mb" id="navbarSupportedContent">
+                 <div class="user-acount">
+                     <a href="login.html">Đăng nhập</a>/
+                     <a href="register.html">Đăng ký</a>
+                 </div>
+                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                   <li class="nav-item">
+                     <a class="nav-link" aria-current="page" href="index.html">Trang chủ</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="introduce.html">Giới thiệu</a>
+                   </li>
+                   <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle d-flex" href="product.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       Sản phẩm <i class="fas fa-plus icon-drop"></i>
+                     </a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                       <li><a class="dropdown-item" href="product.html">Cà phê</a></li>
+                       <li><a class="dropdown-item" href="product.html">Bánh ngọt</a></li>
+                       <li><a class="dropdown-item" href="product.html">Smoothies</a></li>
+                       <li><a class="dropdown-item" href="product.html">Trà hoa quả</a></li>
+                     </ul>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="news.html">Tin tức</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="menu.html">Thực đơn</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="contact.html">Liên hệ</a>
+                   </li>
+                 </ul>
+               </div>
+             </div>
+           </nav>
+        </div>
+     </header>
+    <div class="content">
+        <div class="firt-pic">
+            <img src="images/slider_1.jpg" alt="">
+        </div>
+        <div class="slide">
+            <div class="container">
+                <div class="slide-show">
+                    <div class="title-slide">
+                        <h2><span class="title">DANH MỤC SẢN PHẨM</span></h2>
+                    </div>
+                    <div class="silder-show">
+                        <div class="owl-carousel owl-theme owl-product">
+                            <div class="item">
+                                <div class="slide-img">
+                                    <a class="img-pro" href="#">
+                                        <img src="images/slide1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="slide-title">
+                                    <h3>Trà nóng</h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="slide-img">
+                                    <a class="img-pro" href="#">
+                                        <img src="images/slide_2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="slide-title">
+                                    <h3>Trà hoa quả</h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="slide-img">
+                                    <a class="img-pro" href="#">
+                                        <img src="images/slide_3.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="slide-title">
+                                    <h3>Smoothies</h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="slide-img">
+                                    <a class="img-pro" href="#">
+                                        <img src="images/slide_4.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="slide-title">
+                                    <h3>Bánh ngọt</h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="slide-img">
+                                    <a class="img-pro" href="#">
+                                        <img src="images/slide_5.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="slide-title">
+                                    <h3>Trà nóng</h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="slide-img">
+                                    <a class="img-pro" href="#">
+                                        <img src="images/slide_6.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="slide-title">
+                                    <h3>Trà hoa quả</h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="slide-img">
+                                    <a class="img-pro" href="#">
+                                        <img src="images/slide_3.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="slide-title">
+                                    <h3>Smoothies</h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="slide-img">
+                                    <a class="img-pro" href="#">
+                                        <img src="images/slide_4.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="slide-title">
+                                    <h3>Bánh ngọt</h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="slide-img">
+                                    <a class="img-pro" href="#">
+                                        <img src="images/slide_6.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="slide-title">
+                                    <h3>Trà hoa quả</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="second-pic">
+            <div class="reason">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="content-reason">
+                                <div class="header-reason">
+                                    <div class="title-slide">
+                                        <h2>
+                                            <span class="title">
+                                                TẠI SAO LẠI CHỌN CHÚNG TÔI
+                                            </span>
+                                        </h2>
+                                    </div>
+                                    <div class="content-header">
+                                        <p>Với những nghệ nhân rang tâm huyết và đội ngũ tài năng cùng những câu chuyện trà đầy cảm hứng, ngôi nhà Tea House là không gian dành riêng cho những ai trót yêu say đắm hương vị của những lá trà tuyệt hảo.</p>
+                                    </div>
+                                </div>
+                                <div class="reason-item">
+                                    <div class="item-service d-flex">
+                                        <span><img src="images/icon_why_1.png" alt="why 1"></span>
+                                        <div class="service d-flex flex-column">
+                                            <span class="title-service">
+                                                Giá cả phải chăng
+                                            </span>
+                                            <span class="content-service">
+                                                Cam kết chỉ cung cấp cà phê có nguồn gốc được kiểm soát chất lượng
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="item-service d-flex">
+                                        <span><img src="images/icon_why_2.png" alt="why 1"></span>
+                                        <div class="service d-flex flex-column">
+                                            <span class="title-service">
+                                                Hương vị tuyệt hảo
+                                            </span>
+                                            <span class="content-service">
+                                                Những đọt trà được lựa chọn cẩn thận ngay từ lúc đang ngâm mình trong sương
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="item-service d-flex">
+                                        <span><img src="images/icon_why_3.png" alt="why 1"></span>
+                                        <div class="service d-flex flex-column">
+                                            <span class="title-service">
+                                                Sản phẩm tự nhiên
+                                            </span>
+                                            <span class="content-service">
+                                                Cam kết chỉ cung cấp lá trà có nguồn gốc được kiểm soát chất lượng chặt
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-product">
+            <div class="container">
+                <div class="menu-today">
+                    <div class="title-slide">
+                        <h2>
+                            <span class="title">
+                                THỰC ĐƠN HÔM NAY
+                            </span>
+                        </h2>
+                    </div>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="tea-tab" data-bs-toggle="tab" data-bs-target="#tea" type="button" role="tab" aria-controls="tea" aria-selected="true">Trà nóng</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="tea-j-tab" data-bs-toggle="tab" data-bs-target="#tea-j" type="button" role="tab" aria-controls="tea-j" aria-selected="false">Trà hoa quả</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="smooth-tab" data-bs-toggle="tab" data-bs-target="#smooth" type="button" role="tab" aria-controls="smooth" aria-selected="false">Smoothies</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="cookie-tab" data-bs-toggle="tab" data-bs-target="#cookie" type="button" role="tab" aria-controls="cookie" aria-selected="false">Bánh ngọt</button>
+                          </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="tea" role="tabpanel" aria-labelledby="tea-tab">
+                            <div class="list-item-pro">
+                                <div class="item-pro-menu">
+                                    <div class="item-menu">
+                                        <div class="item-drink">
+                                            <div class="item-img">
+                                                <a class="img-pro" href="#">
+                                                    <img src="images/pro_1.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="add-cart">
+                                                <span>Thêm vào giỏ hàng</span>
+                                            </div>
+                                        </div>
+                                        <div class="title-drink">
+                                            <h3><a href="#">
+                                                TRÀ PHÚC BỒN TỬ
+                                            </a></h3>
+                                            <span>Giá: <strong> 45.000₫</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-pro-menu">
+                                    <div class="item-menu">
+                                        <div class="item-drink">
+                                            <div class="item-img">
+                                                <a class="img-pro" href="#">
+                                                    <img src="images/pro_2.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="add-cart">
+                                                <span>Thêm vào giỏ hàng</span>
+                                            </div>
+                                        </div>
+                                        <div class="title-drink">
+                                            <h3><a href="#">
+                                                TRÀ VẢI
+                                            </a></h3>
+                                            <span>Giá: <strong> 45.000₫</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-pro-menu">
+                                    <div class="item-menu">
+                                        <div class="item-drink">
+                                            <div class="item-img">
+                                                <a class="img-pro" href="#">
+                                                    <img src="images/pro_3.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="add-cart">
+                                                <span>Thêm vào giỏ hàng</span>
+                                            </div>
+                                        </div>
+                                        <div class="title-drink">
+                                            <h3><a href="#">
+                                                TRÀ CAM ĐÀO
+                                            </a></h3>
+                                            <span>Giá: <strong> 45.000₫</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-pro-menu">
+                                    <div class="item-menu">
+                                        <div class="item-drink">
+                                            <div class="item-img">
+                                                <a class="img-pro" href="#">
+                                                    <img src="images/pro_4.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="add-cart">
+                                                <span>Thêm vào giỏ hàng</span>
+                                            </div>
+                                        </div>
+                                        <div class="title-drink">
+                                            <h3><a href="#">
+                                                TRÀ TÁO
+                                            </a></h3>
+                                            <span>Giá: <strong> 45.000₫</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-pro-menu">
+                                    <div class="item-menu">
+                                        <div class="item-drink">
+                                            <div class="item-img">
+                                                <a class="img-pro" href="#">
+                                                    <img src="images/pro_5.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="add-cart">
+                                                <span>Thêm vào giỏ hàng</span>
+                                            </div>
+                                        </div>
+                                        <div class="title-drink">
+                                            <h3><a href="#">
+                                                TRÀ VIỆT QUẤT
+                                            </a></h3>
+                                            <span>Giá: <strong> 45.000₫</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-pro-menu">
+                                    <div class="item-menu">
+                                        <div class="item-drink">
+                                            <div class="item-img">
+                                                <a class="img-pro" href="#">
+                                                    <img src="images/pro_6.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="add-cart">
+                                                <span>Thêm vào giỏ hàng</span>
+                                            </div>
+                                        </div>
+                                        <div class="title-drink">
+                                            <h3><a href="#">
+                                                TRÀ DÂU TÂY
+                                            </a></h3>
+                                            <span>Giá: <strong> 45.000₫</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-pro-menu">
+                                    <div class="item-menu">
+                                        <div class="item-drink">
+                                            <div class="item-img">
+                                                <a class="img-pro" href="#">
+                                                    <img src="images/pro_7.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="add-cart">
+                                                <span>Thêm vào giỏ hàng</span>
+                                            </div>
+                                        </div>
+                                        <div class="title-drink">
+                                            <h3><a href="#">
+                                                TRÀ XOÀI
+                                            </a></h3>
+                                            <span>Giá: <strong> 45.000₫</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-pro-menu">
+                                    <div class="item-menu">
+                                        <div class="item-drink">
+                                            <div class="item-img">
+                                                <a class="img-pro" href="#">
+                                                    <img src="images/pro_8.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="add-cart">
+                                                <span>Thêm vào giỏ hàng</span>
+                                            </div>
+                                        </div>
+                                        <div class="title-drink">
+                                            <h3><a href="#">
+                                                TRÀ CHANH
+                                            </a></h3>
+                                            <span>Giá: <strong> 45.000₫</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view-more">
+                                <span><a href="#">Xem thêm <i class="fas fa-chevron-right"></i></a></span>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tea-j" role="tabpanel" aria-labelledby="tea-j-tab">
+                            <div class="list-item-pro">
+                                <div class="item-pro-menu">
+                                    <div class="item-menu">
+                                        <div class="item-drink">
+                                            <div class="item-img">
+                                                <a class="img-pro" href="#">
+                                                    <img src="images/pro_1.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="add-cart">
+                                                <span>Thêm vào giỏ hàng</span>
+                                            </div>
+                                        </div>
+                                        <div class="title-drink">
+                                            <h3><a href="#">
+                                                TRÀ PHÚC BỒN TỬ
+                                            </a></h3>
+                                            <span>Giá: <strong> 45.000₫</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-pro-menu">
+                                    <div class="item-menu">
+                                        <div class="item-drink">
+                                            <div class="item-img">
+                                                <a class="img-pro" href="#">
+                                                    <img src="images/pro_2.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="add-cart">
+                                                <span>Thêm vào giỏ hàng</span>
+                                            </div>
+                                        </div>
+                                        <div class="title-drink">
+                                            <h3><a href="#">
+                                                TRÀ VẢI
+                                            </a></h3>
+                                            <span>Giá: <strong> 45.000₫</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-pro-menu">
+                                    <div class="item-menu">
+                                        <div class="item-drink">
+                                            <div class="item-img">
+                                                <a class="img-pro" href="#">
+                                                    <img src="images/pro_3.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="add-cart">
+                                                <span>Thêm vào giỏ hàng</span>
+                                            </div>
+                                        </div>
+                                        <div class="title-drink">
+                                            <h3><a href="#">
+                                                TRÀ CAM ĐÀO
+                                            </a></h3>
+                                            <span>Giá: <strong> 45.000₫</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-pro-menu">
+                                    <div class="item-menu">
+                                        <div class="item-drink">
+                                            <div class="item-img">
+                                                <a class="img-pro" href="#">
+                                                    <img src="images/pro_4.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="add-cart">
+                                                <span>Thêm vào giỏ hàng</span>
+                                            </div>
+                                        </div>
+                                        <div class="title-drink">
+                                            <h3><a href="#">
+                                                TRÀ TÁO
+                                            </a></h3>
+                                            <span>Giá: <strong> 45.000₫</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-pro-menu">
+                                    <div class="item-menu">
+                                        <div class="item-drink">
+                                            <div class="item-img">
+                                                <a class="img-pro" href="#">
+                                                    <img src="images/pro_5.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="add-cart">
+                                                <span>Thêm vào giỏ hàng</span>
+                                            </div>
+                                        </div>
+                                        <div class="title-drink">
+                                            <h3><a href="#">
+                                                TRÀ VIỆT QUẤT
+                                            </a></h3>
+                                            <span>Giá: <strong> 45.000₫</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-pro-menu">
+                                    <div class="item-menu">
+                                        <div class="item-drink">
+                                            <div class="item-img">
+                                                <a class="img-pro" href="#">
+                                                    <img src="images/pro_6.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="add-cart">
+                                                <span>Thêm vào giỏ hàng</span>
+                                            </div>
+                                        </div>
+                                        <div class="title-drink">
+                                            <h3><a href="#">
+                                                TRÀ DÂU TÂY
+                                            </a></h3>
+                                            <span>Giá: <strong> 45.000₫</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-pro-menu">
+                                    <div class="item-menu">
+                                        <div class="item-drink">
+                                            <div class="item-img">
+                                                <a class="img-pro" href="#">
+                                                    <img src="images/pro_7.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="add-cart">
+                                                <span>Thêm vào giỏ hàng</span>
+                                            </div>
+                                        </div>
+                                        <div class="title-drink">
+                                            <h3><a href="#">
+                                                TRÀ XOÀI
+                                            </a></h3>
+                                            <span>Giá: <strong> 45.000₫</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-pro-menu">
+                                    <div class="item-menu">
+                                        <div class="item-drink">
+                                            <div class="item-img">
+                                                <a class="img-pro" href="#">
+                                                    <img src="images/pro_8.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="add-cart">
+                                                <span>Thêm vào giỏ hàng</span>
+                                            </div>
+                                        </div>
+                                        <div class="title-drink">
+                                            <h3><a href="#">
+                                                TRÀ CHANH
+                                            </a></h3>
+                                            <span>Giá: <strong> 45.000₫</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view-more">
+                                <span><a href="#">Xem thêm <i class="fas fa-chevron-right"></i></a></span>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="smooth" role="tabpanel" aria-labelledby="smooth-tab">
+                            <div class="list-item-pro">
+                            <div class="item-pro-menu">
+                                <div class="item-menu">
+                                    <div class="item-drink">
+                                        <div class="item-img">
+                                            <a class="img-pro" href="#">
+                                                <img src="images/pro_9.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="add-cart">
+                                            <span>Thêm vào giỏ hàng</span>
+                                        </div>
+                                    </div>
+                                    <div class="title-drink">
+                                        <h3><a href="#">
+                                            Smoothies CHUỐI DỪA
+                                        </a></h3>
+                                        <span>Giá: <strong> 45.000₫</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-pro-menu">
+                                <div class="item-menu">
+                                    <div class="item-drink">
+                                        <div class="item-img">
+                                            <a class="img-pro" href="#">
+                                                <img src="images/pro_10.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="add-cart">
+                                            <span>Thêm vào giỏ hàng</span>
+                                        </div>
+                                    </div>
+                                    <div class="title-drink">
+                                        <h3><a href="#">
+                                            Smoothies DÂU VIỆT QUẤT
+                                        </a></h3>
+                                        <span>Giá: <strong> 45.000₫</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-pro-menu">
+                                <div class="item-menu">
+                                    <div class="item-drink">
+                                        <div class="item-img">
+                                            <a class="img-pro" href="#">
+                                                <img src="images/pro_11.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="add-cart">
+                                            <span>Thêm vào giỏ hàng</span>
+                                        </div>
+                                    </div>
+                                    <div class="title-drink">
+                                        <h3><a href="#">
+                                            Smoothies DÂU
+                                        </a></h3>
+                                        <span>Giá: <strong> 45.000₫</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-pro-menu">
+                                <div class="item-menu">
+                                    <div class="item-drink">
+                                        <div class="item-img">
+                                            <a class="img-pro" href="#">
+                                                <img src="images/pro_12.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="add-cart">
+                                            <span>Thêm vào giỏ hàng</span>
+                                        </div>
+                                    </div>
+                                    <div class="title-drink">
+                                        <h3><a href="#">
+                                            Smoothies DÂU CHUỐI
+                                        </a></h3>
+                                        <span>Giá: <strong> 45.000₫</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="view-more">
+                                <span><a href="#">Xem thêm <i class="fas fa-chevron-right"></i></a></span>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="cookie" role="tabpanel" aria-labelledby="cookie-tab">
+                            <div class="list-item-pro">
+                                <div class="item-pro-menu">
+                                    <div class="item-menu">
+                                        <div class="item-drink">
+                                            <div class="item-img">
+                                                <a class="img-pro" href="#">
+                                                    <img src="images/pro_13.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="add-cart">
+                                                <span>Thêm vào giỏ hàng</span>
+                                            </div>
+                                        </div>
+                                        <div class="title-drink">
+                                            <h3><a href="#">
+                                                BÁNH CÀ PHÊ PHOMAI
+                                            </a></h3>
+                                            <span>Giá: <strong> 45.000₫</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-pro-menu">
+                                    <div class="item-menu">
+                                        <div class="item-drink">
+                                            <div class="item-img">
+                                                <a class="img-pro" href="#">
+                                                    <img src="images/pro_14.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="add-cart">
+                                                <span>Thêm vào giỏ hàng</span>
+                                            </div>
+                                        </div>
+                                        <div class="title-drink">
+                                            <h3><a href="#">
+                                                TIRAMISU
+                                            </a></h3>
+                                            <span>Giá: <strong> 45.000₫</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-pro-menu">
+                                    <div class="item-menu">
+                                        <div class="item-drink">
+                                            <div class="item-img">
+                                                <a class="img-pro" href="#">
+                                                    <img src="images/pro_15.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="add-cart">
+                                                <span>Thêm vào giỏ hàng</span>
+                                            </div>
+                                        </div>
+                                        <div class="title-drink">
+                                            <h3><a href="#">
+                                                CARAMEL PHOMAI
+                                            </a></h3>
+                                            <span>Giá: <strong> 45.000₫</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-pro-menu">
+                                    <div class="item-menu">
+                                        <div class="item-drink">
+                                            <div class="item-img">
+                                                <a class="img-pro" href="#">
+                                                    <img src="images/pro_16.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="add-cart">
+                                                <span>Thêm vào giỏ hàng</span>
+                                            </div>
+                                        </div>
+                                        <div class="title-drink">
+                                            <h3><a href="#">
+                                                bÁNH BÔNG LAN CUỘN TRÀ XANH
+                                            </a></h3>
+                                            <span>Giá: <strong> 45.000₫</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view-more">
+                                <span><a href="#">Xem thêm <i class="fas fa-chevron-right"></i></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="time-to-open">
+            <div class="container">
+                <div class="time d-flex">
+                        <div class="time-open">
+                            <div class="time-content">
+                                <div class="title-time">
+                                    <h2>
+                                        <span class="title">
+                                            THỜI GIAN MỞ CỬA
+                                        </span>
+                                    </h2>
+                                </div>
+                                <div class="decription-time">
+                                    <span class="b">
+                                        “Cà phê nhé" - Một lời hẹn rất riêng của người Việt. Một lời ngỏ mộc mạc để mình ngồi lại bên nhau và sẻ chia câu chuyện của riêng mình.
+                                    </span>
+                                </div>
+                                <div class="time-calendar d-flex flex-column">
+                                    <span>
+                                        T2 - T6: 8h30 - 21h30
+                                    </span>
+                                    <span>
+                                        T7 - CN: 8h00 - 22h00
+                                    </span>
+                                </div>
+                                <div class="order">
+                                    <a href="#">
+                                        <button type="submit" >Đặt bàn ngay</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pic-of-time">
+                            <div class="img-time">
+                                <img src="images/banner_time_open.jpg" alt="">
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="special-news">
+            <div class="container">
+                <div class="new-spec">
+                    <div class="title-slide">
+                        <h2>
+                            <span class="title">
+                                TIN TỨC NỔI BẬC
+                            </span>
+                        </h2>
+                    </div>
+                    <div class="news-slide">
+                        <div class="owl-carousel owl-theme owl-news">
+                            <div class="item">
+                                <div class="news-item">
+                                    <div class="slide-img">
+                                        <a class="img-pro" href="#">
+                                            <img src="images/news-1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="news-title">
+                                        <div class="title-news">
+                                            <h3>
+                                                <a href="#">
+                                                    Nhâm nhi cà phê bao lâu nhưng bạn tận mắt nhìn kỹ xem hạt cà phê chưa?
+                                                </a>
+                                            </h3>
+                                        </div>
+                                        <div class="decription-news">
+                                            <span>                         
+				                                Cốc cafe vị đăng đắng, lẫn thêm chút ngọt bùi của sữa đặc sao mà gây nghiện đến thế. Không chỉ cuốn hút ở mùi vị, một cốc cafe sáng còn giúp ngày mới tràn đầy năng lượng với người trẻ, sẵn sàng ch...
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="news-item">
+                                    <div class="slide-img">
+                                        <a class="img-pro" href="#">
+                                            <img src="images/news-2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="news-title">
+                                        <div class="title-news">
+                                            <h3>
+                                                <a href="#">
+                                                    Uống 1-4 tách cà phê mỗi ngày giúp bệnh nhân ung thư kéo dài sự sống                                                </a>
+                                            </h3>
+                                        </div>
+                                        <div class="decription-news">
+                                            <span>                         
+                                                Uống từ một đến bốn tách cà phê mỗi ngày có thể giúp bệnh nhân ung thư đại trực tràng giai đoạn cuối sống lâu hơn và làm chậm sự tiến triển của bệnh. Phát hiện này được các nhà khoa học rút ra từ ...
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="news-item">
+                                    <div class="slide-img">
+                                        <a class="img-pro" href="#">
+                                            <img src="images/news-3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="news-title">
+                                        <div class="title-news">
+                                            <h3>
+                                                <a href="#">
+                                                    Dùng cốc giấy đựng cà phê nóng, thứ bạn uống đầy ắp những thứ đáng sợ ngày
+                                                </a>
+                                            </h3>
+                                        </div>
+                                        <div class="decription-news">
+                                            <span>                  
+                                                Đối với nhiều người, một ngày mới chỉ có thể khởi đầu tốt đẹp bằng một tách cà phê nóng. Nhờ cafein, bộ não dường như không thể nhận được tín hiệu "mệt mỏi", từ đó tạo cho con người ta một nguồn n...
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="news-item">
+                                    <div class="slide-img">
+                                        <a class="img-pro" href="#">
+                                            <img src="images/news-4.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="news-title">
+                                        <div class="title-news">
+                                            <h3>
+                                                <a href="#">
+                                                    Uống trà có mất ngủ không?
+                                                 </a>
+                                            </h3>
+                                        </div>
+                                        <div class="decription-news">
+                                            <span>                         
+                                                Uống trà có mất ngủ không? Đây có lẽ là câu hỏi kinh điển, nhất là với những người mới tập uống trà. Có những người chỉ nhấp một chén trà thôi cũng có thể khiến họ trằn trọc khó ngủ cả đêm. Nhưng ...
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="news-item">
+                                    <div class="slide-img">
+                                        <a class="img-pro" href="#">
+                                            <img src="images/news-5.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="news-title">
+                                        <div class="title-news">
+                                            <h3>
+                                                <a href="#">
+                                                    Cà phê hay thể dục: Lựa chọn nào giúp đánh bại cơn buồn ngủ tốt hơn?
+                                                </a>
+                                            </h3>
+                                        </div>
+                                        <div class="decription-news">
+                                            <span>                         
+                                                Có hai trường phái để đánh bại những cơn buồn ngủ vào sáng sớm và đầu giờ chiều, hai thời điểm trong ngày mà bạn cần lấy lại sự tỉnh táo của mình nhất. Một số người sẽ chọn giải pháp nhanh chóng v...
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slick-list">
+            <div class="owl-carousel owl-theme owl-slick">
+                <div class="item">
+                    <div class="slick-img">
+                        <a href="#">
+                            <img src="images/picture_1.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slick-img">
+                        <a href="#">
+                            <img src="images/picture_2.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slick-img">
+                        <a href="#">
+                            <img src="images/picture_3.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slick-img">
+                        <a href="#">
+                            <img src="images/picture_4.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slick-img">
+                        <a href="#">
+                            <img src="images/picture_5.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="intro">
+                        <div class="logo-footer">
+                            <a href="index.html">
+                                <img src="images/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="desire">
+                            <span>
+                                Chúng tôi mong muốn Tea House sẽ trở thành “Nhà Trà", nơi mọi người xích lại gần nhau và tìm thấy niềm vui, sự sẻ chia thân tình bên những tách cà phê đượm hương, chất lượng.
+                            </span>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact">
+                        <div class="contact-title">
+                            <h4>LIÊN HỆ VỚI CHÚNG TÔI</h4>
+                        </div>
+                        <div class="infomation">
+                            <div class="address">
+                                <div><i class="fas fa-map-marker-alt"></i></div>
+                                <div>Địa chỉ: Tâng 6 toà nhà Ladeco, 266 Đội Cấn, phường Liễu Giai, Hà Nội, Vietnam</div>
+                            </div>
+                            <div class="hotline">
+                                <div><i class="fas fa-phone-alt"></i></div>
+                                <div class="d-flex flex-column phone">
+                                    <span>Hotline đặt bàn: <a href="tel:18006750">1800 6750</a></span>
+                                    <span>Hotline giao hàng: <a href="tel:18006750">1800 6750</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="register">
+                        <div class="register-title">
+                            <h4>ĐĂNG KÝ NHẬN KHUYẾN MÃI</h4>
+                        </div>
+                        <div class="decrip-regis">
+                            <span>Đừng bỏ lỡ những sản phẩm và chương trình khuyến mãi hấp dẫn</span>
+                        </div>
+                        <form class="form-email">
+                            <input type="text" placeholder="Email của bạn">
+                            <a href="#">ĐĂNG KÝ</a></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="license">
+                <span>© Bản quyền thuộc về Cafein Team | Cung cấp bởi <a href="#"> Sapo </a></span>
+            </div>
+        </div>
+    </footer>
+    <div class="backtotop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.icon-drop').click(function(event){
+                event.preventDefault();
+                $('.dropdown-menu').toggleClass('show');
+            })
+            $(".input-qty").keypress(function(){
+                if(this.value.length==3)
+                {return false;}
+            })
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 600) {
+                    $(".backtotop").fadeIn();
+                }
+                else {
+                    $(".backtotop").fadeOut();
+                }
+            })
+            $(".backtotop").click(function () {
+                $("html, body").animate({ scrollTop: 0 }, 900);
+            })
+            $('.navbar-toggler').click(function(){
+                $('.overlay-mb').addClass('show');
+            })
+            $('.overlay-mb').click(function(){
+                $('.overlay-mb').removeClass('show');
+                $('.menu-mb').removeClass('show');
+            })
+            $(".search").click(function(e){
+                $(".input-search").addClass('show');
+                e.stopPropagation();
+                $('.search>span').addClass('hide');
+                e.stopPropagation();
+            });
+            $(".input-search").click(function(e){
+                e.stopPropagation();
+            });
+            $(document).click(function(){
+                $('.input-search').removeClass('show');
+                $('.search>span').removeClass('hide');
+            });
+            $('.owl-product').owlCarousel({
+                loop:true,
+                items:1,
+                margin:10,
+                paginationNumbers:3,
+                responsiveClass:true,
+                dots:true,
+                responsive:{
+                    0:{
+                        items:2,
+                        nav:true
+                    },
+                    600:{
+                        items:4,
+                        nav:true,
+                        loop:false
+                    }
+                }
+            })
+            $('.owl-news').owlCarousel({
+                loop:true,
+                items:1,
+                margin:30,
+                paginationNumbers:3,
+                responsiveClass:true,
+                dots:true,
+                responsive:{
+                    0:{
+                        items:1,
+                        nav:true
+                    },
+                    600:{
+                        items:3,
+                        nav:true,
+                        loop:false
+                    }
+                }
+            })
+            $('.owl-slick').owlCarousel({
+                loop:true,
+                items:1,
+                margin:0,
+                paginationNumbers:3,
+                responsiveClass:true,
+                dots:false,
+                responsive:{
+                    0:{
+                        items:2,
+                        nav:true
+                    },
+                    600:{
+                        items:5,
+                        nav:true,
+                        loop:false
+                    }
+                }
+            })
+            $('input.input-qty').each(function() {
+            var $this = $(this),
+                qty = $this.parent().find('.is-form'),
+                min = Number($this.attr('min')),
+                max = Number($this.attr('max'))
+            if (min == 0) {
+                var d = 0
+            } else d = min
+                $(qty).click(function() {
+                    if ($(this).hasClass('minus')) {
+                    if (d > min) d += -1
+                    } else if ($(this).hasClass('plus')) {
+                    var x = Number($this.val()) + 1
+                    if (x <= max) d += 1
+                    }
+                    $this.attr('value', d).val(d)
+                })
+            })
+        })
+    </script>
+</body>
+</html>
