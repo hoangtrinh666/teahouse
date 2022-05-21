@@ -1,22 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700;900&family=Quicksand:wght@400;500;700&display=swap");
 :root{
 
     --back-ground:#4d8a54;
-    --back-gr-h:#277830;
-    --word-color: #fff;
+    --back-ground-main: rgba(144, 182, 148, .2);
     --word-color-hover: #282828;
-    --color-word-search: #6b6b6b;
+    --back-gr-h:#277830;
+    --color-title:#2f5064;
+    --color-hover:#4D738A;
+    --word-color: #fff;
     --color-footer: #dfdfdf;
     --fsize-search: 11px;
-    --fsize-menu: 14px;
-    --fsize-icon: 16px;
+    --fsize-menu: 16px;
+    --fsize-icon: 18px;
     --fsize-title: 24px;
     --fsize-p: 18px;
     --font-family-sans-serif:  "Quicksand", sans-serif;
+    --font-family-nunito: "Nunito", sans-serif;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: var(--back-ground-main);
 }
 input{
     outline: none;
@@ -28,9 +40,11 @@ textarea{
 /*header*/
 /*top-header*/
 /*left-header*/
-
+.header-pc{
+    background-color: var(--word-color);
+}
 .top-header{
-    background-color: var(--back-ground);
+    background-color: var(--back-gr-h);
 }
 .contact-hotline{
     height: 45px;
@@ -39,7 +53,6 @@ textarea{
     margin-bottom: 0;
     color: var(--word-color);
     font-size: var(--fsize-menu);
-    font-style: var(--font-family-sans-serif);
 }
 .contact-hotline span .phone{
     color: var(--word-color);
@@ -68,7 +81,6 @@ textarea{
 .search span {
     color: var(--word-color);
     font-size: var(--fsize-menu);
-    font-style: var(--font-family-sans-serif);
 }
 .search span:hover{
     color: var(--word-color-hover);
@@ -96,22 +108,23 @@ textarea{
     background: var(--word-color);
     color: var(--word-color-hover);
 }
-.btn-search i{
-    font-weight: 900;
-}
 .account{
     position: relative;
     margin: 0 30px;
     padding: 10px 0;
 }
 .account:hover .group-ac{
-    display: block;
+    opacity: 1;
+    transform: rotateX(0deg);
 }
-.account span, .cart span{
+.account a, .cart a{
     color: var(--word-color);
     font-size: var(--fsize-menu);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
 }
-.account span:hover, .cart span a:hover{
+.account a:hover, .cart span a:hover{
     color: var(--word-color-hover);
 }
 .search span i,.account span i, .cart span i{
@@ -121,8 +134,12 @@ textarea{
     text-decoration: none;
     color: var(--word-color);
 }
-.group-ac{
-    display: none;
+.account .group-ac{
+    opacity: 0;
+    transform: rotateX(-90deg);
+    transform-style: preserve-3d;
+    transform-origin: top;
+    transition: all .5s ease ;
     position: absolute;
     padding: 10px;
     top: 100%;
@@ -162,13 +179,19 @@ textarea{
     padding: 12px 0;
 }
 .cart:hover .group-cart{
-    display: block;
+    opacity: 1;
+    transform: rotateX(0deg);
 }
-.group-cart:hover{
-    display: block;
+.group-cart:hover, .group-ac:hover{
+    opacity: 1;
+    transform: rotateX(0deg);
 }
 .group-cart{
-    display: none;
+    opacity: 0;
+    transform: rotateX(-90deg);
+    transform-style: preserve-3d;
+    transform-origin: top;
+    transition: all .5s ease ;
     position: absolute;
     top: 100%;
     left: 50%;
@@ -199,11 +222,9 @@ textarea{
     color: var(--word-color-hover);
     font-size: var(--fsize-menu);
 }
-.group-ac:hover, .group-cart:hover{
-    display: block;
-}
 .count-c{
     position: relative;
+    margin-right: 10px;
 }
 .count-cart{
     position: absolute;
@@ -217,7 +238,6 @@ textarea{
     color: var(--back-ground) !important;
     line-height: 15px;
     text-align: center;
-    font-style: initial;
 }
 /*header-pc*/
 .nav-menu{
@@ -408,7 +428,6 @@ textarea{
 .navbar-light .navbar-nav .nav-link{
     color: var(--word-color-hover);
     font-size: var(--fsize-icon);
-    font-style: var(--font-family-sans-serif);
     padding: 10px 30px;
     position: relative;
 }
@@ -488,17 +507,14 @@ textarea{
 .title-slide h2{
     padding: 0;
     margin: 0;
-}
-.title-slide h2 .title{
+    font-weight: 700;
+    font-family: var(--font-family-nunito);
     font-size: 30px;
     color: var(--word-color-hover);
-    padding: 0;
-    margin: 0;
     position: relative;
-    font-weight: inherit;
-    font-style: var(--font-family-sans-serif);
+    text-align: center;
 }
-.title::before{
+.title-slide h2::before{
     content: "";
     position: absolute;
     background-image: url("../images/title_base.png");
@@ -549,7 +565,6 @@ textarea{
     font-size: var(--fsize-title);
     font-weight: 700;
     color: var(--word-color-hover);
-    font-style: var(--font-family-sans-serif);
 }
 .slide-title:hover h3{
     color: var(--back-ground);
@@ -590,7 +605,6 @@ textarea{
 .content-header p{
     font-size: var(--fsize-p);
     font-weight: 500;
-    font-style: var(--font-family-sans-serif);
     color: var(--word-color-hover);
     margin-bottom: 0;
 }
@@ -606,7 +620,7 @@ textarea{
 }
 .title-service{
     color: var(--word-color-hover);
-    font-style: var(--font-family-sans-serif);
+    font-family: var(--font-family-nunito);
     font-weight: 700;
     font-size: var(--fsize-title);
     margin-bottom: 5px;
@@ -636,7 +650,7 @@ textarea{
     background-color: var(--back-ground);
 }
 .menu-today .nav-tabs .nav-link{
-    color: var(--word-color-hover);
+    color: var(--color-title);
     font-weight: 700;
     font-size: var(--fsize-p);
     border: 1px solid var(--back-ground);
@@ -648,7 +662,20 @@ textarea{
     width: 25%;
     padding: 10px;
 }
+.item-menu{
+    border-radius: 10px;
+    border: 2px solid var(--word-color);
+    background: linear-gradient(
+        125deg,
+        rgba(245, 245, 245, 0) 0%,
+        rgba(77, 138, 84, 0.6) 100%
+      );
+    overflow: hidden;
+    padding: 10px;
+    backdrop-filter: blur(50px);
+}
 .item-drink .item-img .img-pro{
+    
     position: relative;
     display: block;
     padding-bottom: 100%;
@@ -658,6 +685,11 @@ textarea{
     margin-bottom: 0px;
     transform: scale(1);
     transition: all .35s;
+}
+.item-drink .item-img{
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
 }
 .item-drink .item-img .img-pro img{
     position: absolute;
@@ -670,7 +702,6 @@ textarea{
 }
 .item-drink {
     position: relative;
-    border: 1px solid #eee;
     overflow: hidden;
     perspective: 600px;
     margin-bottom: 10px;
@@ -684,12 +715,6 @@ textarea{
 }
 .add-cart{
     position: absolute;
-    background-color: var(--back-ground);
-    color: var(--word-color);
-    text-align: center;
-    padding: 10px 0;
-    font-size: var(--fsize-p);
-    font-weight: 700;
     bottom: 0;
     left: 0;
     right: 0;
@@ -698,14 +723,28 @@ textarea{
     transform-style: preserve-3d;
     transition: all .5s ease;
 }
-.add-cart:hover{
-    background-color: var(--word-color-hover);
+.add-cart a{
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    background-color: var(--back-ground);
+    color: var(--word-color);
+    text-align: center;
+    padding: 10px 0;
+    font-size: var(--fsize-p);
+    font-weight: 700;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.add-cart a:hover{
+    background-color: var(--back-gr-h);
 }
 .title-drink{
     padding: 0 30px;
     text-align: center;
 }
-.title-drink h3{
+.title-drink a h3{
+    color: var(--color-title);
     font-size: var(--fsize-p);
     width: 100%;
     text-align: center;
@@ -713,16 +752,23 @@ textarea{
     overflow: hidden;
     white-space: nowrap;
     text-transform: uppercase;
+    font-weight: 700;
+    font-family: var(--font-family-nunito);
 }
-.title-drink h3 a{
+.title-drink a{
     color: var(--word-color-hover);
+    text-decoration: none;
+}
+.item-menu:hover .title-drink a h3{
+    color: var(--color-hover);
     text-decoration: none;
 }
 .title-drink span{
     width: 100%;
     margin-bottom: 5px;
     font-size: var(--fsize-p);
-    font-weight: 400;
+    font-weight: 500;
+    color: var(--back-ground)
 }
 .list-item-pro{
     display: flex;
@@ -769,15 +815,12 @@ textarea{
 .title-time h2{
     margin: 0;
     padding: 0  ;
-}
-.title-time h2 .title{
     color: var(--word-color);
     font-weight: inherit;
     margin: 0;
     padding: 0;
     font-size: 30px;
     position: relative;
-    font-style: var(--font-family-sans-serif);
 }
 .title-time h2 .title::before{
     content: "";
@@ -822,7 +865,7 @@ textarea{
     width: 100%;
     position: relative;
     height: 100%;
-    padding-bottom: 100%;
+    padding-bottom: 90%;
     display: block; 
 }
 .img-time img{
@@ -838,28 +881,68 @@ textarea{
 .special-news{
     margin-bottom: 50px;
 }
-.news-item .slide-img{
-    margin-bottom: 15px;
+.cate-item{
+    border: 2px solid var(--word-color);
+    padding: 10px;
+    border-radius: 10px;
 }
-.title-news h3{
-    font-size: var(--fsize-title);
-    font-style: var(--font-family-sans-serif);
+.new{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 5px 8px;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 204, 19, 1) 12.69%,
+        #ffffff 126.81%
+      );
+    z-index: 10;
+}
+.new p{
+    margin-bottom: 0;
+    color: rgba(247, 37, 41, 1);
+    font-size: var(--fsize-menu);
     font-weight: 700;
+    font-family: var(--font-family-nunito);
 }
-.title-news h3 a{
+.news-item{
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--word-color);
+}
+.slide-img{
+    position: relative;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+.title-news a h3{
+    font-size: var(--fsize-title);
+    font-family: var(--font-family-nunito);
+    font-weight: 700;
+    color: var(--color-title);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+.title-news a{
     text-decoration: none;
     color: var(--word-color-hover);
-    text-transform: uppercase;
 }
-.title-news h3 a:hover{
+.title-news a:hover h3{
     color: var(--back-ground);
 }
-.decription-news{
+.decription-news p{
     color: var(--word-color-hover);
     font-size: var(--fsize-icon);
-    font-weight: 500;
-    font-style: var(--font-family-sans-serif);
+    font-weight: 400;
     margin-bottom: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
 }
 .slick-list .owl-carousel .owl-stage-outer{
     margin-bottom: 0;
@@ -890,7 +973,6 @@ textarea{
 .desire span{
     color: var(--color-footer);
     font-weight: 500;
-    font-style: var(--font-family-sans-serif);
 }
 .icon{
     display: flex;
@@ -928,7 +1010,7 @@ textarea{
 .contact-title h4, .register-title h4{
     font-size: var(--fsize-title);
     font-weight: 700;
-    font-style: var(--font-family-sans-serif);
+    font-family: var(--font-family-nunito);
     color: var(--back-ground);
     margin: 0;
 }
@@ -1114,16 +1196,21 @@ textarea{
 .wrapper-img .img-pro{
     padding-bottom: 86%;
 }
-.wrapper-title h3{
+.wrapper-title a h3{
     font-size: 20px;
     font-weight: 700;
+    color: var(--color-title);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
 }
-.wrapper-title h3 a, .wrapper-sm-title h3 a{
+.wrapper-title a, .wrapper-sm-title a{
     text-decoration: none;
     color: var(--word-color-hover);
-    font-style: var(--font-family-sans-serif);
 }
-.wrapper-title h3 a:hover, .wrapper-sm-title h3 a:hover{
+.wrapper-title a:hover h3, .wrapper-sm-title a:hover h3{
     color: var(--back-ground);
 }
 .wrapper-sm-img{
@@ -1135,14 +1222,25 @@ textarea{
     width: 60%;
     padding-left: 15px;
 }
-.wrapper-sm-title h3{
+.wrapper-sm-title a h3{
     font-size: 17px;
     font-weight: 700;
+    color: var(--color-title);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
-.wrapper-sm-title span{
+.wrapper-sm-title p{
     color: var(--word-color-hover);
     font-size: var(--fsize-menu);
     font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 .news-list-title{
     padding-bottom: 15px;
@@ -1155,7 +1253,8 @@ textarea{
     font-size: var(--fsize-title);
     color: var(--word-color-hover);
     margin: 0;
-    
+    font-weight: 700;
+    font-family: var(--font-family-nunito);
 } 
 .news-list-title::before{
     content: "";
@@ -1197,7 +1296,7 @@ textarea{
     transform: translate(0, -50%);
     bottom: 0;
     border-width: 4px 0px 4px 5px ;
-    border-color: transparent #fff;
+    border-color: transparent var(--back-ground-main);
     border-style: solid;
     display: block;
     z-index: 3;
@@ -1246,8 +1345,7 @@ textarea{
 .content-about span{
     color: var(--word-color-hover);
     font-size: var(--fsize-icon);
-    font-weight: 500;
-    font-style: var(--font-family-sans-serif);
+    font-weight: 400;
 
 }
 .view-intro{
@@ -1402,7 +1500,7 @@ textarea{
     font-size: 14px;
     color: var(--word-color-hover);
     font-weight: 500;
-    font-style: var(--font-family-sans-serif);
+    font-family: var(--font-family-nunito);
 
 }
 .detail-title{
@@ -1414,7 +1512,7 @@ textarea{
 }
 .detail-title h1{
     font-size: 20px;
-    font-style: var(--font-family-sans-serif);
+    font-family: var(--font-family-nunito);
     font-weight: 700;
 }
 .detail-title::before{
@@ -1554,7 +1652,6 @@ textarea{
     left: 50%;
     transform: translate(-50%,-50%);
     font-size: var(--fsize-icon);
-    font-style: var(--font-family-sans-serif);
     color: var(--back-ground);
 }
 .input-qty {

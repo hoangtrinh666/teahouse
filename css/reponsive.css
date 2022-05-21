@@ -4,8 +4,8 @@
     --word-color: #fff;
     --word-color-hover: #282828;
     --fsize-p-content: 11px;
-    --fsize-icon: 16px;
-    --fsize-menu: 14px;
+    --fsize-icon: 18px;
+    --fsize-menu: 16px;
     --font-family-sans-serif:  "Quicksand", sans-serif;
 }
 @media (max-width: 992px){
