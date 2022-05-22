@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/reponsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>   
 </head>
 <body>
     <!-- header -->
@@ -104,10 +111,10 @@
                              <li class="nav-item"><a href="introduce.html"><span>Giới Thiệu</span></a></li>
                              <li class="nav-item dropdown"><a href="product.html"><span>Sản Phẩm</span><i class="fas fa-sort-down"></i></a>
                                  <ul class="sub-menu">
-                                     <li class="sub-item"><a href="product.html"><span>Cà Phê</span></a></li>
-                                     <li class="sub-item"><a href="product.html"><span>Bánh Ngọt</span></a></li>
-                                     <li class="sub-item"><a href="product.html"><span>Smoothies</span></a></li>
-                                     <li class="sub-item"><a href="product.html"><span>Trà Hoa Quả</span></a></li>
+                                    <li class="sub-item"><a  href="menu.html#coffee"><span>Cà Phê</span></a></li>
+                                    <li class="sub-item"><a  href="menu.html#cake"><span>Bánh Ngọt</span></a></li>
+                                    <li class="sub-item"><a  href="menu.html#smoothies"><span>Smoothies</span></a></li>
+                                    <li class="sub-item"><a  href="menu.html#fruittea"><span>Trà Hoa Quả</span></a></li>
                                  </ul>
                              </li>
                          </ul>
@@ -167,10 +174,10 @@
                        Sản phẩm <i class="fas fa-plus icon-drop"></i>
                      </a>
                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                       <li><a class="dropdown-item" href="product.html">Cà phê</a></li>
-                       <li><a class="dropdown-item" href="product.html">Bánh ngọt</a></li>
-                       <li><a class="dropdown-item" href="product.html">Smoothies</a></li>
-                       <li><a class="dropdown-item" href="product.html">Trà hoa quả</a></li>
+                       <li><a class="dropdown-item" href="menu.html#coffee">Cà phê</a></li>
+                       <li><a class="dropdown-item" href="menu.html#cake">Bánh ngọt</a></li>
+                       <li><a class="dropdown-item" href="menu.html#smoothies">Smoothies</a></li>
+                       <li><a class="dropdown-item" href="menu.html#fruittea">Trà hoa quả</a></li>
                      </ul>
                    </li>
                    <li class="nav-item">
@@ -417,7 +424,8 @@
                                                 </a>
                                             </div>
                                             <div class="add-cart">
-                                                <a href="#">Đặt hàng</a>
+                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                                        href="#addUserModalToggle">Đặt hàng</button>
                                             </div>
                                         </div>
                                         <div class="title-drink">
@@ -434,12 +442,16 @@
                                     <div class="item-menu">
                                         <div class="item-drink">
                                             <div class="item-img">
+                                                <div class="new">
+                                                    <p>NEW</p>
+                                                </div>
                                                 <a class="img-pro" href="#">
-                                                    <img src="images/pro_2.jpg" alt="">
+                                                    <img src="images/pro_1.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="add-cart">
-                                                <a href="#">Đặt hàng</a>
+                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                                        href="#addUserModalToggle">Đặt hàng</button>
                                             </div>
                                         </div>
                                         <div class="title-drink">
@@ -456,12 +468,16 @@
                                     <div class="item-menu">
                                         <div class="item-drink">
                                             <div class="item-img">
+                                                <div class="new">
+                                                    <p>NEW</p>
+                                                </div>
                                                 <a class="img-pro" href="#">
-                                                    <img src="images/pro_3.jpg" alt="">
+                                                    <img src="images/pro_1.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="add-cart">
-                                                <a href="#">Đặt hàng</a>
+                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                                        href="#addUserModalToggle">Đặt hàng</button>
                                             </div>
                                         </div>
                                         <div class="title-drink">
@@ -478,12 +494,16 @@
                                     <div class="item-menu">
                                         <div class="item-drink">
                                             <div class="item-img">
+                                                <div class="new">
+                                                    <p>NEW</p>
+                                                </div>
                                                 <a class="img-pro" href="#">
-                                                    <img src="images/pro_4.jpg" alt="">
+                                                    <img src="images/pro_1.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="add-cart">
-                                                <a href="#">Đặt hàng</a>
+                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                                        href="#addUserModalToggle">Đặt hàng</button>
                                             </div>
                                         </div>
                                         <div class="title-drink">
@@ -500,12 +520,16 @@
                                     <div class="item-menu">
                                         <div class="item-drink">
                                             <div class="item-img">
+                                                <div class="new">
+                                                    <p>NEW</p>
+                                                </div>
                                                 <a class="img-pro" href="#">
-                                                    <img src="images/pro_4.jpg" alt="">
+                                                    <img src="images/pro_1.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="add-cart">
-                                                <a href="#">Đặt hàng</a>
+                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                                        href="#addUserModalToggle">Đặt hàng</button>
                                             </div>
                                         </div>
                                         <div class="title-drink">
@@ -522,12 +546,16 @@
                                     <div class="item-menu">
                                         <div class="item-drink">
                                             <div class="item-img">
+                                                <div class="new">
+                                                    <p>NEW</p>
+                                                </div>
                                                 <a class="img-pro" href="#">
-                                                    <img src="images/pro_4.jpg" alt="">
+                                                    <img src="images/pro_1.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="add-cart">
-                                                <a href="#">Đặt hàng</a>
+                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                                        href="#addUserModalToggle">Đặt hàng</button>
                                             </div>
                                         </div>
                                         <div class="title-drink">
@@ -566,12 +594,16 @@
                                     <div class="item-menu">
                                         <div class="item-drink">
                                             <div class="item-img">
+                                                <div class="new">
+                                                    <p>NEW</p>
+                                                </div>
                                                 <a class="img-pro" href="#">
-                                                    <img src="images/pro_8.jpg" alt="">
+                                                    <img src="images/pro_1.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="add-cart">
-                                                <a href="#">Đặt hàng</a>
+                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                                        href="#addUserModalToggle">Đặt hàng</button>
                                             </div>
                                         </div>
                                         <div class="title-drink">
@@ -595,12 +627,16 @@
                                     <div class="item-menu">
                                         <div class="item-drink">
                                             <div class="item-img">
+                                                <div class="new">
+                                                    <p>NEW</p>
+                                                </div>
                                                 <a class="img-pro" href="#">
                                                     <img src="images/pro_1.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="add-cart">
-                                                <a href="#">Đặt hàng</a>
+                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                                        href="#addUserModalToggle">Đặt hàng</button>
                                             </div>
                                         </div>
                                         <div class="title-drink">
@@ -617,12 +653,16 @@
                                     <div class="item-menu">
                                         <div class="item-drink">
                                             <div class="item-img">
+                                                <div class="new">
+                                                    <p>NEW</p>
+                                                </div>
                                                 <a class="img-pro" href="#">
-                                                    <img src="images/pro_2.jpg" alt="">
+                                                    <img src="images/pro_1.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="add-cart">
-                                                <a href="#">Đặt hàng</a>
+                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                                        href="#addUserModalToggle">Đặt hàng</button>
                                             </div>
                                         </div>
                                         <div class="title-drink">
@@ -639,12 +679,16 @@
                                     <div class="item-menu">
                                         <div class="item-drink">
                                             <div class="item-img">
+                                                <div class="new">
+                                                    <p>NEW</p>
+                                                </div>
                                                 <a class="img-pro" href="#">
-                                                    <img src="images/pro_3.jpg" alt="">
+                                                    <img src="images/pro_1.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="add-cart">
-                                                <a href="#">Đặt hàng</a>
+                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                                        href="#addUserModalToggle">Đặt hàng</button>
                                             </div>
                                         </div>
                                         <div class="title-drink">
@@ -661,12 +705,16 @@
                                     <div class="item-menu">
                                         <div class="item-drink">
                                             <div class="item-img">
+                                                <div class="new">
+                                                    <p>NEW</p>
+                                                </div>
                                                 <a class="img-pro" href="#">
-                                                    <img src="images/pro_4.jpg" alt="">
+                                                    <img src="images/pro_1.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="add-cart">
-                                                <a href="#">Đặt hàng</a>
+                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                                        href="#addUserModalToggle">Đặt hàng</button>
                                             </div>
                                         </div>
                                         <div class="title-drink">
@@ -683,12 +731,16 @@
                                     <div class="item-menu">
                                         <div class="item-drink">
                                             <div class="item-img">
+                                                <div class="new">
+                                                    <p>NEW</p>
+                                                </div>
                                                 <a class="img-pro" href="#">
-                                                    <img src="images/pro_4.jpg" alt="">
+                                                    <img src="images/pro_1.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="add-cart">
-                                                <a href="#">Đặt hàng</a>
+                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                                        href="#addUserModalToggle">Đặt hàng</button>
                                             </div>
                                         </div>
                                         <div class="title-drink">
@@ -705,12 +757,16 @@
                                     <div class="item-menu">
                                         <div class="item-drink">
                                             <div class="item-img">
+                                                <div class="new">
+                                                    <p>NEW</p>
+                                                </div>
                                                 <a class="img-pro" href="#">
-                                                    <img src="images/pro_4.jpg" alt="">
+                                                    <img src="images/pro_1.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="add-cart">
-                                                <a href="#">Đặt hàng</a>
+                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                                        href="#addUserModalToggle">Đặt hàng</button>
                                             </div>
                                         </div>
                                         <div class="title-drink">
@@ -749,12 +805,16 @@
                                     <div class="item-menu">
                                         <div class="item-drink">
                                             <div class="item-img">
+                                                <div class="new">
+                                                    <p>NEW</p>
+                                                </div>
                                                 <a class="img-pro" href="#">
-                                                    <img src="images/pro_8.jpg" alt="">
+                                                    <img src="images/pro_1.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="add-cart">
-                                                <a href="#">Đặt hàng</a>
+                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                                        href="#addUserModalToggle">Đặt hàng</button>
                                             </div>
                                         </div>
                                         <div class="title-drink">
@@ -778,12 +838,16 @@
                                     <div class="item-menu">
                                         <div class="item-drink">
                                             <div class="item-img">
+                                                <div class="new">
+                                                    <p>NEW</p>
+                                                </div>
                                                 <a class="img-pro" href="#">
                                                     <img src="images/pro_1.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="add-cart">
-                                                <a href="#">Đặt hàng</a>
+                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                                        href="#addUserModalToggle">Đặt hàng</button>
                                             </div>
                                         </div>
                                         <div class="title-drink">
@@ -800,12 +864,16 @@
                                     <div class="item-menu">
                                         <div class="item-drink">
                                             <div class="item-img">
+                                                <div class="new">
+                                                    <p>NEW</p>
+                                                </div>
                                                 <a class="img-pro" href="#">
-                                                    <img src="images/pro_2.jpg" alt="">
+                                                    <img src="images/pro_1.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="add-cart">
-                                                <a href="#">Đặt hàng</a>
+                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                                        href="#addUserModalToggle">Đặt hàng</button>
                                             </div>
                                         </div>
                                         <div class="title-drink">
@@ -822,12 +890,16 @@
                                     <div class="item-menu">
                                         <div class="item-drink">
                                             <div class="item-img">
+                                                <div class="new">
+                                                    <p>NEW</p>
+                                                </div>
                                                 <a class="img-pro" href="#">
-                                                    <img src="images/pro_3.jpg" alt="">
+                                                    <img src="images/pro_1.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="add-cart">
-                                                <a href="#">Đặt hàng</a>
+                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                                        href="#addUserModalToggle">Đặt hàng</button>
                                             </div>
                                         </div>
                                         <div class="title-drink">
@@ -844,12 +916,16 @@
                                     <div class="item-menu">
                                         <div class="item-drink">
                                             <div class="item-img">
+                                                <div class="new">
+                                                    <p>NEW</p>
+                                                </div>
                                                 <a class="img-pro" href="#">
-                                                    <img src="images/pro_4.jpg" alt="">
+                                                    <img src="images/pro_1.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="add-cart">
-                                                <a href="#">Đặt hàng</a>
+                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                                        href="#addUserModalToggle">Đặt hàng</button>
                                             </div>
                                         </div>
                                         <div class="title-drink">
@@ -866,12 +942,16 @@
                                     <div class="item-menu">
                                         <div class="item-drink">
                                             <div class="item-img">
+                                                <div class="new">
+                                                    <p>NEW</p>
+                                                </div>
                                                 <a class="img-pro" href="#">
-                                                    <img src="images/pro_4.jpg" alt="">
+                                                    <img src="images/pro_1.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="add-cart">
-                                                <a href="#">Đặt hàng</a>
+                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                                        href="#addUserModalToggle">Đặt hàng</button>
                                             </div>
                                         </div>
                                         <div class="title-drink">
@@ -888,12 +968,16 @@
                                     <div class="item-menu">
                                         <div class="item-drink">
                                             <div class="item-img">
+                                                <div class="new">
+                                                    <p>NEW</p>
+                                                </div>
                                                 <a class="img-pro" href="#">
-                                                    <img src="images/pro_4.jpg" alt="">
+                                                    <img src="images/pro_1.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="add-cart">
-                                                <a href="#">Đặt hàng</a>
+                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                                        href="#addUserModalToggle">Đặt hàng</button>
                                             </div>
                                         </div>
                                         <div class="title-drink">
@@ -932,12 +1016,16 @@
                                     <div class="item-menu">
                                         <div class="item-drink">
                                             <div class="item-img">
+                                                <div class="new">
+                                                    <p>NEW</p>
+                                                </div>
                                                 <a class="img-pro" href="#">
-                                                    <img src="images/pro_8.jpg" alt="">
+                                                    <img src="images/pro_1.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="add-cart">
-                                                <a href="#">Đặt hàng</a>
+                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                                        href="#addUserModalToggle">Đặt hàng</button>
                                             </div>
                                         </div>
                                         <div class="title-drink">
@@ -961,12 +1049,16 @@
                                     <div class="item-menu">
                                         <div class="item-drink">
                                             <div class="item-img">
+                                                <div class="new">
+                                                    <p>NEW</p>
+                                                </div>
                                                 <a class="img-pro" href="#">
                                                     <img src="images/pro_1.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="add-cart">
-                                                <a href="#">Đặt hàng</a>
+                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                                        href="#addUserModalToggle">Đặt hàng</button>
                                             </div>
                                         </div>
                                         <div class="title-drink">
@@ -983,12 +1075,16 @@
                                     <div class="item-menu">
                                         <div class="item-drink">
                                             <div class="item-img">
+                                                <div class="new">
+                                                    <p>NEW</p>
+                                                </div>
                                                 <a class="img-pro" href="#">
-                                                    <img src="images/pro_2.jpg" alt="">
+                                                    <img src="images/pro_1.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="add-cart">
-                                                <a href="#">Đặt hàng</a>
+                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                                        href="#addUserModalToggle">Đặt hàng</button>
                                             </div>
                                         </div>
                                         <div class="title-drink">
@@ -1005,12 +1101,16 @@
                                     <div class="item-menu">
                                         <div class="item-drink">
                                             <div class="item-img">
+                                                <div class="new">
+                                                    <p>NEW</p>
+                                                </div>
                                                 <a class="img-pro" href="#">
-                                                    <img src="images/pro_3.jpg" alt="">
+                                                    <img src="images/pro_1.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="add-cart">
-                                                <a href="#">Đặt hàng</a>
+                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                                        href="#addUserModalToggle">Đặt hàng</button>
                                             </div>
                                         </div>
                                         <div class="title-drink">
@@ -1027,12 +1127,16 @@
                                     <div class="item-menu">
                                         <div class="item-drink">
                                             <div class="item-img">
+                                                <div class="new">
+                                                    <p>NEW</p>
+                                                </div>
                                                 <a class="img-pro" href="#">
-                                                    <img src="images/pro_4.jpg" alt="">
+                                                    <img src="images/pro_1.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="add-cart">
-                                                <a href="#">Đặt hàng</a>
+                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                                        href="#addUserModalToggle">Đặt hàng</button>
                                             </div>
                                         </div>
                                         <div class="title-drink">
@@ -1049,12 +1153,16 @@
                                     <div class="item-menu">
                                         <div class="item-drink">
                                             <div class="item-img">
+                                                <div class="new">
+                                                    <p>NEW</p>
+                                                </div>
                                                 <a class="img-pro" href="#">
-                                                    <img src="images/pro_4.jpg" alt="">
+                                                    <img src="images/pro_1.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="add-cart">
-                                                <a href="#">Đặt hàng</a>
+                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                                        href="#addUserModalToggle">Đặt hàng</button>
                                             </div>
                                         </div>
                                         <div class="title-drink">
@@ -1071,12 +1179,16 @@
                                     <div class="item-menu">
                                         <div class="item-drink">
                                             <div class="item-img">
+                                                <div class="new">
+                                                    <p>NEW</p>
+                                                </div>
                                                 <a class="img-pro" href="#">
-                                                    <img src="images/pro_4.jpg" alt="">
+                                                    <img src="images/pro_1.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="add-cart">
-                                                <a href="#">Đặt hàng</a>
+                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                                        href="#addUserModalToggle">Đặt hàng</button>
                                             </div>
                                         </div>
                                         <div class="title-drink">
@@ -1115,12 +1227,16 @@
                                     <div class="item-menu">
                                         <div class="item-drink">
                                             <div class="item-img">
+                                                <div class="new">
+                                                    <p>NEW</p>
+                                                </div>
                                                 <a class="img-pro" href="#">
-                                                    <img src="images/pro_8.jpg" alt="">
+                                                    <img src="images/pro_1.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="add-cart">
-                                                <a href="#">Đặt hàng</a>
+                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                                        href="#addUserModalToggle">Đặt hàng</button>
                                             </div>
                                         </div>
                                         <div class="title-drink">
@@ -1417,7 +1533,219 @@
     <div class="backtotop">
         <i class="fas fa-chevron-up"></i>
     </div>
-    <script src="js/bootstrap.min.js"></script>
+    <!-- Modal đặt hàng -->
+    <div class="modal fade" id="addUserModalToggle" aria-hidden="true" aria-labelledby="addModalToggleLabel"
+    tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+            <div class="modal-item">
+                <div class="modal-img">
+                    <div class="img-pro">
+                        <img src="images/pro_1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="modal-cart">
+                    <span class="title-modal">Trà phúc bồn tử</span>
+                    <span class="price-modal">40.000₫</span>
+                    <form class="buttons_added">
+                       <button type="button" class="minus is-form">
+                           <i class="fas fa-minus"></i>
+                       </button>
+                       <input type="number" pattern="/^-?\d+\.?\d*$/" min="1" max="999" class="input-qty" value="1" />
+                       <button type="button" class="plus is-form">
+                           <i class="fas fa-plus"></i>
+                       </button>
+                   </form>
+                   <span class="total-modal">Tổng tiền: <b>100.000₫</b></span>
+                </div>
+            </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="list-select">
+            <div class="list-choose">
+                <p>Chọn loại</p>
+                <div class="modal-choose">
+                    <div class="choose-item">
+                        <label>
+                            <input type="radio" name="type" value="Nóng">
+                            <span>Nóng</span>
+                        </label>
+                    </div>
+                    <div class="choose-item">
+                        <label>
+                            <input type="radio" name="type" value="Lạnh">
+                            <span>Lạnh</span>
+                        </label>
+                    </div>
+                </div>
+                <p>Chọn size</p>
+                <div class="modal-choose">
+                    <div class="choose-item">
+                        <label>
+                            <input type="radio" name="size" value="S">
+                            <span>S</span>
+                        </label>
+                    </div>
+                    <div class="choose-item">
+                        <label>
+                            <input type="radio" name="size" value="M">
+                            <span>M</span>
+                        </label>
+                    </div>
+                    <div class="choose-item">
+                        <label>
+                            <input type="radio" name="size" value="L">
+                            <span>L</span>
+                        </label>
+                    </div>
+                </div>
+                <p>Chọn đá</p>
+                <div class="modal-choose">
+                    <div class="choose-item">
+                        <label>
+                            <input type="radio" name="ice" value="không đá">
+                            <span>Không đá</span>
+                        </label>
+                    </div>
+                    <div class="choose-item">
+                        <label>
+                            <input type="radio" name="ice" value="25% đá">
+                            <span>25% đá</span>
+                        </label>
+                    </div>
+                    <div class="choose-item">
+                        <label>
+                            <input type="radio" name="ice" value="50% đá">
+                            <span>50% đá</span>
+                        </label>
+                    </div>
+                    <div class="choose-item">
+                        <label>
+                            <input type="radio" name="ice" value="100% đá">
+                            <span>100% đá</span>
+                        </label>
+                    </div>  
+                </div>
+                <p>Chọn đường</p>
+                <div class="modal-choose">
+                    <div class="choose-item">
+                        <label>
+                            <input type="radio" name="sugar" value="không đường">
+                            <span>Không đường</span>
+                        </label>
+                    </div>
+                    <div class="choose-item">
+                        <label>
+                            <input type="radio" name="sugar" value="25% đường">
+                            <span>25% đường</span>
+                        </label>
+                    </div>
+                    <div class="choose-item">
+                        <label>
+                            <input type="radio" name="sugar" value="50% đường">
+                            <span>50% đường</span>
+                        </label>
+                    </div>
+                    <div class="choose-item">
+                        <label>
+                            <input type="radio" name="sugar" value="100% đường">
+                            <span>100% đường</span>
+                        </label>
+                    </div>
+                </div>
+                <p>Chọn topping</p>
+                <div class="modal-choose">
+                    <div class="choose-topping">
+                        <div class="topping-item">
+                            <label>
+                                <input type="checkbox" name="topping" value="Trân châu đường đen">
+                                <span>Trân châu đường đen</span>
+                            </label>
+                            <p class="price-topping">5.000₫</p>
+                        </div>
+                        <div class="topping-item">
+                            <label>
+                                <input type="checkbox" name="topping" value="Trân châu đường đen">
+                                <span>Trân châu đường đen</span>
+                            </label>
+                            <p class="price-topping">5.000₫</p>
+                        </div>
+                        <div class="topping-item">
+                            <label>
+                                <input type="checkbox" name="topping" value="Trân châu đường đen">
+                                <span>Trân châu đường đen</span>
+                            </label>
+                            <p class="price-topping">5.000₫</p>
+                        </div>
+                        <div class="topping-item">
+                            <label>
+                                <input type="checkbox" name="topping" value="Trân châu đường đen">
+                                <span>Trân châu đường đen</span>
+                            </label>
+                            <p class="price-topping">5.000₫</p>
+                        </div>
+                        <div class="topping-item">
+                            <label>
+                                <input type="checkbox" name="topping" value="Trân châu đường đen">
+                                <span>Trân châu đường đen</span>
+                            </label>
+                            <p class="price-topping">5.000₫</p>
+                        </div>
+                        <div class="topping-item">
+                            <label>
+                                <input type="checkbox" name="topping" value="Trân châu đường đen">
+                                <span>Trân châu đường đen</span>
+                            </label>
+                            <p class="price-topping">5.000₫</p>
+                        </div>
+                        <div class="topping-item">
+                            <label>
+                                <input type="checkbox" name="topping" value="Trân châu đường đen">
+                                <span>Trân châu đường đen</span>
+                            </label>
+                            <p class="price-topping">5.000₫</p>
+                        </div>
+                        <div class="topping-item">
+                            <label>
+                                <input type="checkbox" name="topping" value="Trân châu đường đen">
+                                <span>Trân châu đường đen</span>
+                            </label>
+                            <p class="price-topping">5.000₫</p>
+                        </div>
+                        <div class="topping-item">
+                            <label>
+                                <input type="checkbox" name="topping" value="Trân châu đường đen">
+                                <span>Trân châu đường đen</span>
+                            </label>
+                            <p class="price-topping">5.000₫</p>
+                        </div>
+                        <div class="topping-item">
+                            <label>
+                                <input type="checkbox" name="topping" value="Trân châu đường đen">
+                                <span>Trân châu đường đen</span>
+                            </label>
+                            <p class="price-topping">5.000₫</p>
+                        </div>
+                        <div class="topping-item">
+                            <label>
+                                <input type="checkbox" name="topping" value="Trân châu đường đen">
+                                <span>Trân châu đường đen</span>
+                            </label>
+                            <p class="price-topping">5.000₫</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-success" type="submit">Đặt hàng</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
@@ -1465,7 +1793,7 @@
             $('.owl-product').owlCarousel({
                 loop:true,
                 items:1,
-                margin:10,
+                margin:20,
                 paginationNumbers:3,
                 responsiveClass:true,
                 dots:true,
@@ -1484,7 +1812,7 @@
             $('.owl-news').owlCarousel({
                 loop:true,
                 items:1,
-                margin:30,
+                margin:20,
                 paginationNumbers:3,
                 responsiveClass:true,
                 dots:true,

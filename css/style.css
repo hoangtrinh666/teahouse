@@ -112,6 +112,7 @@ textarea{
     position: relative;
     margin: 0 30px;
     padding: 10px 0;
+    perspective: 500px;
 }
 .account:hover .group-ac{
     opacity: 1;
@@ -130,6 +131,7 @@ textarea{
 .search span i,.account span i, .cart span i{
     margin-right: 5px;
 }
+
 .cart span a{
     text-decoration: none;
     color: var(--word-color);
@@ -176,7 +178,7 @@ textarea{
     position: relative;
 }
 .cart{
-    padding: 12px 0;
+    padding: 12px 0;    
 }
 .cart:hover .group-cart{
     opacity: 1;
@@ -312,6 +314,11 @@ textarea{
 );
     transform-style: preserve-3d;
     transition: all .5s ease;
+    z-index: 100;
+}
+.sub-menu:hover{
+    opacity: 1;
+    transform: rotateX(0deg);
 }
 .sub-menu .sub-item{
     list-style: none;
@@ -513,6 +520,7 @@ textarea{
     color: var(--word-color-hover);
     position: relative;
     text-align: center;
+    text-transform: uppercase;
 }
 .title-slide h2::before{
     content: "";
@@ -723,7 +731,7 @@ textarea{
     transform-style: preserve-3d;
     transition: all .5s ease;
 }
-.add-cart a{
+.add-cart button{
     text-decoration: none;
     display: inline-block;
     width: 100%;
@@ -1116,7 +1124,7 @@ textarea{
     margin-bottom: 30px;
 }
 .breadcumb{
-    padding: 20px 0;
+    padding: 30px 0;
     margin-bottom: 30px;
 }
 .breadcumb ul{
@@ -1872,6 +1880,15 @@ textarea{
     color: var(--word-color-hover);
     margin: 10px 0;
 }
+.tt-cart .name-product{
+    width: 100%;
+    display: block;
+    color: var(--color-title);
+    font-size: var(--fsize-p);
+    font-weight: 700;
+    font-family: var(--font-family-nunito);
+    margin: 5px 0;
+}
 .sum{
     margin: 10px 0;
     padding: 10px ;
@@ -1909,7 +1926,8 @@ textarea{
     object-fit: cover;
 }
 .cart-h{
-    border-bottom: 1px solid #eee;
+    border: 2px solid #fff;
+    border-radius: 10px;
     margin-bottom: 20px;
     padding: 10px;
 }
@@ -1917,7 +1935,6 @@ textarea{
     font-size: 18px !important;
     color: var(--back-ground) !important;
     font-weight: 700 !important;
-
 }
 .total-cart{
     width: 40%;
@@ -1954,8 +1971,10 @@ textarea{
 }
 /*cart*/
 .cart-h .img-pro{
-    width: 15%;
-    padding-bottom: 15%;
+    width: 10%;
+    padding-bottom: 10%;
+    border-radius: 10px;
+    margin-right: 10px;
 }
 .cart-h .tt-cart{
     width: 30%;
@@ -2209,4 +2228,121 @@ textarea{
     margin-right: 5px;
     margin-left: 10px;
     transition: all .38s;
+}
+/*modal*/
+.modal-content{
+    background-color: rgba(144, 182, 148, 1);
+    border: 2px solid var(--word-color);
+}
+.modal-header{
+    align-items: unset;
+    padding: 10px;
+}
+.modal-cart{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    color: var(--word-color);
+}
+
+.modal-item{
+    width: 100%;
+    display: flex;
+}
+.modal-item .modal-img{
+    width: 20%;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.modal-item .modal-img .img-pro{
+    width: 100%;
+    padding-bottom: 100%;
+    border-radius: 10px;
+}
+.modal-cart .title-modal {
+    font-size: var(--fsize-p);
+    font-family: var(--font-family-nunito);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.modal-cart .price-modal {
+    font-size: var(--fsize-p);
+    font-family: var(--font-family-nunito);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.modal-cart .buttons_added{
+    margin-bottom: 10px;
+}
+.modal-cart .buttons_added input{
+    color: var(--back-ground);
+    font-style: var(--fsize-p);
+}
+.modal-cart .total-modal{
+    padding: 10px;
+}
+.modal-cart .total-modal b{
+    color: rgb(255, 238, 0);
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #198754;
+    margin-left: 10px;
+}
+.list-choose{
+    max-height: 500px;
+    overflow-y: scroll;
+    padding: 10px;
+}
+.list-select .modal-choose{
+    background-color: var(--word-color);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.list-select .modal-choose .choose-item{
+    width: 50%;
+}
+.list-select .modal-choose label{
+    color: var(--color-title);
+    font-size: var(--fsize-p);
+    font-weight: 400;
+}
+.modal-choose input{
+    width: 15px;
+    height: 15px;
+}
+.modal-choose input[name="type"] {
+	accent-color: var(--back-ground);
+    padding: 5px;
+}
+.list-select p{
+    margin-bottom: 10px;
+    color: var(--word-color);
+    font-weight: 700;
+    font-family: var(--font-family-nunito);
+}
+.btn-success{
+    color: var(--word-color);
+    font-size: var(--fsize-p);
+    font-weight: 700;
+    font-family: var(--font-family-nunito);
+}
+.list-select .modal-choose .choose-topping{
+    width: 100%;
+}
+.choose-topping .topping-item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.choose-topping .topping-item:last-child{
+    margin-bottom: 0;
+}
+.topping-item .price-topping{
+    margin-bottom: 0;
+    color: var(--color-title);
 }
