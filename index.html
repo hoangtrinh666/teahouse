@@ -1282,9 +1282,8 @@
                                     </span>
                                 </div>
                                 <div class="order">
-                                    <a href="#">
-                                        <button type="submit" >Đặt bàn ngay</button>
-                                    </a>
+                                        <button type="button" data-bs-toggle="modal"
+                                        href="#addTableUserModalToggle">Đặt bàn </button>
                                 </div>
                             </div>
                         </div>
@@ -1745,12 +1744,113 @@
         </div>
       </div>
     </div>
-  </div>
+    </div>
+    <!-- Modal đặt bàn -->
+    <div class="modal fade" id="addTableUserModalToggle" aria-hidden="true" aria-labelledby="addTableModalToggleLabel"
+    tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalToggleLabel">Đặt bàn</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <form class="row g-3">
+                <div class="col-md-6">
+                <label class="form-label">Họ tên</label>
+                <input type="text" id="fullname" class="form-control">
+                </div>
+                <div class="col-md-6">
+                <label class="form-label">Email</label>
+                <input type="text" id="emailbooking" class="form-control">
+                </div>
+                <div class="col-md-6">
+                <label class="form-label">Chọn ngày</label>
+                <input type="datetime-local" id="datechoose" class="form-control" value="" min="">
+                </div>
+                <div class="col-md-6">
+                <label class="form-label">Số người</label>
+                <div class="input-group">
+                    <input type="number" id="seatbooking" class="form-control" min="1" max="20">
+                </div>
+                </div>
+                <div class="col-12">
+                <button class="btn btn-success submit-booking" type="submit">Đặt bàn</button>
+                </div>
+            </form>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="alert-modal">
+    </div>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script>
+        
+        function addAlert(msg, delay, feel) {
+            $(".alert-modal").append(
+                '<div class="overlay-modal non-animate "><div class="alert ' +
+                feel +
+                '"><i class="icon-nofication fas fa-bell feel"></i><span>' +
+                msg +
+                "</span></div></div>"
+            );
+            $(".non-animate").animate({ left: "0" });
+            $(".non-animate")
+                .removeClass("non-animate")
+                .delay(delay)
+                .fadeOut(function () {
+                $(this).remove();
+                });
+            if ($(".alert-modal .alert").length > 6) {
+                $(".alert-modal .alert").eq(0).remove();
+            }
+        }
         $(document).ready(function(){
+            $(".submit-booking").click(function (e) {
+                e.preventDefault();
+                const mintime = timestampToDatetimeInputString(Date.now());
+                console.log(mintime);
+                const maxtime = new Date();
+                const endtime = maxtime.getFullYear()+ "-" + maxtime.getMonth()+ "-" + maxtime.getDate()+"T21:00:00"
+                console.log(endtime)
+                const name = $("#fullname").val();
+                const email = $("#emailbooking").val();
+                const date = $("#datechoose").val();
+                const seat = $("#seatbooking").val();
+                let regexEmail = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+                const regexName = /[a-zA-Z]{1,}/;
+                if (
+                name == "" &&
+                !regexEmail.test(email) && date == "" && seat == ""
+                ) {
+                addAlert("Vui lòng nhập đầy đủ thông tin!", 2000, "error");
+                } else if (name == "") {
+                addAlert("Vui lòng nhập tên!", 1000, "warning");
+                } else if (email == "") {
+                addAlert("Vui lòng nhập email!", 1000, "warning");
+                } else if (!regexEmail.test(email)) {
+                addAlert("Email không hợp lệ!", 1000, "warning");
+                } else if (date == "") {
+                addAlert("Vui lòng chọn ngày!", 1000, "warning");
+                } else if (seat == "") {
+                addAlert("Vui lòng nhập số người!", 1000, "warning");
+                } else {
+                addAlert(
+                    "Đã gửi thông tin để cửa hàng, vui lòng chờ phản hồi qua email!",
+                    2000,
+                    "success"
+                    
+                );
+                $("#fullname").val("");
+                $("#emailbooking").val("");
+                $("#datechoose").val("");
+                $("#seatbooking").val("");
+                }
+                
+            });
             $('.icon-drop').click(function(event){
                 event.preventDefault();
                 $('.dropdown-menu').toggleClass('show');
@@ -1866,6 +1966,18 @@
                 })
             })
         })
+        function timestampToDatetimeInputString(timestamp) {
+            var date = new Date((timestamp + _getTimeZoneOffsetInMs()));
+            // slice(0, 19) includes seconds
+            return date.toISOString().slice(0, 19);
+        }
+  
+        function _getTimeZoneOffsetInMs() {
+            return new Date().getTimezoneOffset() *-60*1000;
+        }
+
+        document.getElementById('datechoose').value = timestampToDatetimeInputString(Date.now())
+        document.getElementById('datechoose').min = timestampToDatetimeInputString(Date.now())
     </script>
 </body>
 </html>
